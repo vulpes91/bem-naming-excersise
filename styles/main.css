@@ -59,12 +59,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #FF5C5C;
 }
 
-.card__details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.button-read-more {
+
+.button {
     display: inline-block;
 
     padding-left: 20px;
@@ -81,14 +77,33 @@ h1, h2, h3, h4, h5, h6 {
     color: #7e9bbd;
 }
 
-/* --------------------- */
 
-.section {
-    padding-top: 60px;
-    padding-bottom: 90px;
+
+.button--black {
+    display: inline-block;
+    margin-bottom: 24px;
+
+    text-decoration: none;
+    color: #fff;
+    padding: 13px 20px;
+    background-color: #000;
+    max-width: 130px;
+    border-radius: 6px;
 }
 
-.section__container {
+.button--black a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* --------------------- */
+
+section {
+    
+}
+
+.container {
     width: 1110px;
     margin-left: auto;
     margin-right: auto;
@@ -168,7 +183,14 @@ h1, h2, h3, h4, h5, h6 {
 
 } 
 
+/* -------------------------------------------- */
 /* ---------------вторая страница-------------- */
+/* -------------------------------------------- */
+
+main {
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
 .product-about {
     margin-bottom: 80px;
     display: flex;
@@ -176,9 +198,6 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.you-may-also-like {
-    margin-bottom: 46px;
-}
 
 .product-about__image {
     margin-right: 30px;
@@ -188,16 +207,38 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     max-width: 540px;
 }
-.product-about__title {
-    display: block;
-    margin-bottom: 19px;
 
-    font-weight: 700;
+/* ____________ЗАГОЛОВКИ______________ */
+
+.header-wrapper {
+    margin-bottom: 13px;
+}
+
+.title {
+    font-weight: bold;
     font-size: 28px;
     line-height: 1.3;
 }
-.product-about__price {
-    display: block;
+
+.title--decorative {
+    font-family: 'Playfair Display', serif;
+}
+
+.you-may-also-like {
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+
+/* ____________//ЗАГОЛОВКИ______________ */
+
+/* ____________ТЕКСТЫ()______________ */
+
+.product-about__price-section {
+    margin-bottom: 32px;
+}
+
+.product-about__price { 
     margin-bottom: 30px;
 
     font-weight: 600;
@@ -206,26 +247,21 @@ h1, h2, h3, h4, h5, h6 {
     color: #7E9BBD;
 }
 
-.product-about__price--currency {
+.product-about__currency {
+    margin-bottom: 30px;
+
+    font-weight: 600;
     font-size: 16px;
+    line-height: 1.2;
+    color: #7E9BBD;
 }
 
-.button {
-    display: block;
-    margin-bottom: 40px;
-
-    text-decoration: none;
-    color: #fff;
-    padding: 13px 20px;
-    background-color: #000;
-    max-width: 130px;
-    border-radius: 6px;
-}
 .product-about__full-text-paragraph {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.7;
+    max-width: 540px;
 }
 
 .product-about__full-text-link {
@@ -235,3 +271,51 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.7;
     color: #000;
 }
+/* ____________//ТЕКСТЫ()______________ */
+
+/* ____________КАРТОЧКИ()______________ */
+
+.cards-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-wrapper__element {
+    display: block;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, .3);
+    width: 350px;
+    height: 410px;
+}
+
+.cards-wrapper__element-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+
+.cards-wrapper__element-price {
+    color: #7e9bbd;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.cards-wrapper__element-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ____________//КАРТОЧКИ()______________ */
+
+
+
+
+
+
+
+
