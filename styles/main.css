@@ -17,305 +17,154 @@ body {
 	align-items: center; */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     /* font-family: 'Playfair Display', serif; */
     font-weight: 400;
 }
 
-.card {
-    display: block;
-    padding: 30px;
-    background: #fff;
-    box-shadow: 0px 10px 40px rgba(126, 155, 189, .3);
-    width: 350px;
-    height: 410px;
-}
-
-.card--sale {
-    border: 5px solid rgba(255, 92, 92, 0.47);
-}
-
-.card__img {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.card__title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 32px;
-}
-
-.card__price {
-    color: #7e9bbd;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-}
-
-.card__price--sale {
-    color: #FF5C5C;
-}
-
-
-.button {
-    display: inline-block;
-
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 46px;
-
-    border: 3px solid rgba(126, 155, 189, .3);
-    border-radius: 6px;
-
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 42px;
-    text-decoration: none;
-    color: #7e9bbd;
-}
-
-
-
-.button--black {
-    display: inline-block;
-    margin-bottom: 24px;
-
-    text-decoration: none;
-    color: #fff;
-    padding: 13px 20px;
-    background-color: #000;
-    max-width: 130px;
-    border-radius: 6px;
-}
-
-.button--black a {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-/* --------------------- */
-
-section {
-    
-}
-
-.container {
-    width: 1110px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.section__header {
-    margin-bottom: 80px;
-}
-
-.header {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.3;
-    text-align: center;
-}
-
-.section__cards {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-bottom: 30px;
-}
-
-.section__cards .card {
-     margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 30px;
-}
-
-.section__pagination {
-    display: flex;
-    justify-content: center;
-}
-
-.pagination {
-    display: flex;
-}
-
-.pagination__item:last-child{
-    margin-right: 0;
-}
-
-.pagination__item {
-    display: inline-block;
-    height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 15px;
-
-    background: #EAEFF2;
-    border-radius: 3px;
-    color: #000;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 40px;
-    text-decoration: none;
-}
-
- .pagination__item--active {
-    display: inline-block;
-    height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 15px;
-   
-    background: rgba(139, 177, 223, 0.3);
-    border-radius: 3px;
-    color: #000;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 40px;
-    text-decoration: none;
-
-} 
-
-/* -------------------------------------------- */
-/* ---------------вторая страница-------------- */
-/* -------------------------------------------- */
 
 main {
     padding-top: 60px;
-    padding-bottom: 90px;
+    padding-bottom: 108px;
 }
-.product-about {
-    margin-bottom: 80px;
+
+.container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
-
-.product-about__image {
-    margin-right: 30px;
+section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1110px;
 }
 
-.product-about__description {
-    display: block;
+.product-info {
+    margin-bottom: 90px;
+}
+
+.product-info-details {
     max-width: 540px;
 }
 
-/* ____________ЗАГОЛОВКИ______________ */
-
-.header-wrapper {
-    margin-bottom: 13px;
+.product-info-details__header {
+    margin-bottom: 20px;
 }
 
-.title {
+.product-info-details__header h2{
     font-weight: bold;
     font-size: 28px;
     line-height: 1.3;
 }
 
-.title--decorative {
-    font-family: 'Playfair Display', serif;
-}
-
-.you-may-also-like {
-    text-align: center;
-    margin-bottom: 46px;
-}
-
-
-/* ____________//ЗАГОЛОВКИ______________ */
-
-/* ____________ТЕКСТЫ()______________ */
-
-.product-about__price-section {
-    margin-bottom: 32px;
-}
-
-.product-about__price { 
-    margin-bottom: 30px;
-
+.product-info-details__price {
     font-weight: 600;
     font-size: 24px;
     line-height: 1.2;
     color: #7E9BBD;
+
+    margin-bottom: 40px;
 }
 
-.product-about__currency {
-    margin-bottom: 30px;
-
-    font-weight: 600;
+.product-info-details__price span:last-child {
     font-size: 16px;
-    line-height: 1.2;
-    color: #7E9BBD;
 }
 
-.product-about__full-text-paragraph {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.7;
-    max-width: 540px;
+.product-info-details__button {
+    margin-bottom: 40px;
 }
 
-.product-about__full-text-link {
+.product-info-details__button a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    padding: 13px 20px;
+
+    background: #000000;
+    border-radius: 6px;
+}
+
+.product-info-details__texts p {
     font-family: 'Playfair Display', serif;
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.product-info-details__texts p:last-child {
+    margin-bottom: 0;
+}
+
+.product-info-details__texts a {
     color: #000;
 }
-/* ____________//ТЕКСТЫ()______________ */
 
-/* ____________КАРТОЧКИ()______________ */
 
-.cards-wrapper{
+.other-products .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.other-products__header {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-bottom: 46px;
+    text-align: center;
+}
+
+.other-products__header h2 {
+    font-size: 28px;
+}
+
+.other-products-cards {
+    display: flex;
     justify-content: space-between;
 }
 
-.cards-wrapper__element {
-    display: block;
-    padding: 30px;
-    background: #fff;
-    box-shadow: 0px 10px 40px rgba(126, 155, 189, .3);
-    width: 350px;
-    height: 410px;
+.card {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.3);
 }
 
-.cards-wrapper__element-title {
+.card__image {
+    margin-bottom: 20px;
+}
+
+.card__header {
+    height: 48px;
+    margin-bottom: 10px;
+}
+.card__header h3{
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
-    margin-bottom: 32px;
 }
 
-.cards-wrapper__element-price {
-    color: #7e9bbd;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-}
-
-.cards-wrapper__element-details {
+.card-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* ____________//КАРТОЧКИ()______________ */
+.card-details__price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #7E9BBD;
+}
 
-
-
-
-
-
-
-
+.card-details__button a {
+    display: inline-block;
+    border: 3px solid rgba(126, 155, 189, 0.3);
+    border-radius: 6px;
+    padding: 13px 20px;
+    text-decoration: none;
+    color: #7E9BBD;
+}
